@@ -1,0 +1,114 @@
+* {
+    box-sizing: border-box;
+}
+
+.heading {
+    font-size: 5rem; /* Ukuran besar sesuai keinginan */
+    text-align: center; /* Pastikan berada di tengah */
+    margin: 5rem 0; /* Margin atas dan bawah yang cukup besar */
+    color: var(--text-color); /* Pastikan warna teks tetap sesuai */
+}
+
+
+.education {
+    padding: 10px 15px;
+    background: var(--bg-color);
+    min-height: 100vh;
+    position: relative;
+    margin-bottom: 200px;
+}
+
+.education h2 {
+    margin-bottom: 5rem;
+}
+
+.card {
+    max-width: 1200px; /* Batas lebar container */
+    margin: auto; /* Untuk memastikan card berada di tengah */
+    flex-wrap: wrap;
+    position: relative;
+    padding: 0 15px; /* Menambahkan sedikit padding untuk kesan seperti sebelumnya */
+}
+
+.card::before {
+    content: "";
+    position: absolute;
+    width: 5px;
+    height: 100%;
+    background-color: var(--main-color);
+    left: 50%; /* Letakkan di tengah */
+    transform: translateX(-50%); /* Perbaiki posisi */
+}
+
+
+
+.card-item {
+    display: flex;
+    justify-content: flex-end; /* Untuk item ganjil */
+    width: 100%;
+    padding: 0 15px;
+    position: relative;
+}
+
+.card-item:last-child {
+    margin-bottom: 0;
+}
+
+.card-item:nth-child(odd) {
+    padding-right: 30px;
+    text-align: right;
+}
+
+.card-item:nth-child(even) {
+    padding-left: 30px;
+    justify-content: flex-start;
+}
+
+.garis {
+    height: 21px;
+    width: 20px;
+    background-color: var(--main-color);
+    box-shadow: 0 0 25px var(--main-color), 0 0 50px var(--main-color);
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 50%;
+    top: 10px;
+    font-size: 20px;
+    font-weight: 800;
+    color: white;
+    margin: 6px 0 15px;
+}
+
+
+
+.isi-card {
+    background-color: var(--bg-color);
+    border: 3px solid var(--main-color);
+    padding: 30px 50px; /* Padding agar ukuran card lebih besar */
+    border-radius: 4rem;
+    box-shadow: 0 0 10px var(--main-color);
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    max-width: 525px; /* Ukuran maksimal card untuk mengingat desain sebelumnya */
+    text-align: center;
+}
+
+.isi-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 25px var(--main-color);
+}
+
+.isi-card h3 {
+    font-size: 20px;
+    color: white;
+    margin: 0 0 10px;
+    font-weight: 500;
+}
+
+.isi-card p {
+    color: white;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 22px;
+}

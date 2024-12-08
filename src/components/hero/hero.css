@@ -1,0 +1,38 @@
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 70px 0;
+    color: white;
+    height: 100vh;
+}
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    text-align: center;
+}
+
+span {
+    color: var(--main-color);
+}
+
+.title {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.description {
+    font-size: 28px;
+    font-weight: bolder;
+}
+
+.img-foto {
+    src: url(/src/assets/satpam.jpg);
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    padding: 10px;
+}
